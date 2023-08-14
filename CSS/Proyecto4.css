@@ -1,0 +1,751 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive Design */
+video {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .Encabezado-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0vw;
+    padding: 3.5vw;
+  }
+  .Encabezado-P4 .Caja-Viaja a {
+    text-decoration: none;
+  }
+  .Encabezado-P4 .Caja-Viaja h1 {
+    font-size: 6vw;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Encabezado-P4 .Caja-Viaja h1:hover {
+    color: purple;
+    transition: 2s;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Label-Menu {
+    position: relative;
+    cursor: pointer;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Label-Menu #Spn-1, .Encabezado-P4 .Caja-BotónHamburguesa #Spn-2, .Encabezado-P4 .Caja-BotónHamburguesa #Spn-3 {
+    position: absolute;
+    content: "";
+    background: #0027FF;
+    width: 20px;
+    height: 4px;
+    top: -8px;
+    left: 63vw;
+    border-radius: 50px;
+    transition: all 400ms ease;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Spn-2 {
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Spn-3 {
+    top: 2px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-1 {
+    transform: rotate(140deg);
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-2 {
+    opacity: 0;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-3 {
+    transform: rotate(-140deg);
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Menu-P4 {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .ExplorarElMundo-P4 {
+    width: 34vw;
+    position: absolute;
+    top: 13vw;
+    left: 4vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .ExplorarElMundo-P4 b {
+    font-size: 3vw;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .DestinosSecretos-P4 {
+    width: 77vw;
+    position: absolute;
+    top: 25vw;
+    left: 4vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .DestinosSecretos-P4 em {
+    font-size: 2vw;
+    color: white;
+    text-transform: lowercase;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 {
+    position: absolute;
+    top: 30vw;
+    left: 4vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 button {
+    font-size: 3vw;
+    padding: 1vw;
+    border-radius: 50vw;
+    border: 0.6vw solid black;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 button:hover {
+    background-color: orange;
+    color: white;
+    transition: 2s;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .PieDePágina-P4 {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Facebook-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 4vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Facebook-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Twitter-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 14vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Twitter-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Instagram-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 24vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Instagram-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .PieDePágina-Contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 5vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Texto {
+    padding: 2.5vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Texto small {
+    font-size: 5.5vw;
+    color: white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS {
+    background-color: white;
+    padding: 2.5vw;
+    border-radius: 50vw;
+    border: 1.5vw solid aqua;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS img {
+    height: 10vw;
+    width: 10vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS:hover {
+    background-color: aqua;
+    transition: 2s;
+    border-radius: 50vw;
+    border: 1.5vw solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS {
+    background-color: white;
+    padding: 2.5vw;
+    border-radius: 50vw;
+    border: 1.5vw solid gray;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS img {
+    height: 10vw;
+    width: 10vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS:hover {
+    background-color: gray;
+    transition: 2s;
+    border-radius: 50vw;
+    border: 1.5vw solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS {
+    background-color: white;
+    padding: 2.5vw;
+    border-radius: 50vw;
+    border: 1.5vw solid blue;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS img {
+    height: 10vw;
+    width: 10vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS:hover {
+    background-color: blue;
+    transition: 2s;
+    border-radius: 50vw;
+    border: 1.5vw solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS {
+    background-color: white;
+    padding: 2.5vw;
+    border-radius: 50vw;
+    border: 1.5vw solid orange;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS img {
+    height: 10vw;
+    width: 10vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS:hover {
+    background-color: orange;
+    transition: 2s;
+    border-radius: 50vw;
+    border: 1.5vw solid white;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .Encabezado-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0vw;
+    padding: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-Viaja a {
+    text-decoration: none;
+  }
+  .Encabezado-P4 .Caja-Viaja h1 {
+    font-size: 4vw;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Encabezado-P4 .Caja-Viaja h1:hover {
+    color: purple;
+    transition: 2s;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Label-Menu {
+    position: relative;
+    cursor: pointer;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Label-Menu #Spn-1, .Encabezado-P4 .Caja-BotónHamburguesa #Spn-2, .Encabezado-P4 .Caja-BotónHamburguesa #Spn-3 {
+    position: absolute;
+    content: "";
+    background: #0027FF;
+    width: 20px;
+    height: 4px;
+    top: -8px;
+    left: 78vw;
+    border-radius: 50px;
+    transition: all 400ms ease;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Spn-2 {
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Spn-3 {
+    top: 2px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-1 {
+    transform: rotate(140deg);
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-2 {
+    opacity: 0;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-3 {
+    transform: rotate(-140deg);
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Menu-P4 {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .ExplorarElMundo-P4 {
+    width: 45vw;
+    position: absolute;
+    top: 18vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .ExplorarElMundo-P4 b {
+    font-size: 4vw;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .DestinosSecretos-P4 {
+    width: 78vw;
+    position: absolute;
+    top: 28vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .DestinosSecretos-P4 em {
+    font-size: 2vw;
+    color: white;
+    text-transform: lowercase;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 {
+    position: absolute;
+    top: 31.5vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 button {
+    font-size: 2.5vw;
+    padding: 1vw;
+    border: 0.4vw solid black;
+    border-radius: 75vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 button:hover {
+    background-color: orange;
+    color: white;
+    transition: 2s;
+    cursor: pointer;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .PieDePágina-P4 {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Facebook-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Facebook-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Twitter-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 12.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Twitter-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Instagram-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 22.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Instagram-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .PieDePágina-Contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Texto {
+    padding: 10px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Texto small {
+    font-size: 25px;
+    color: white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS {
+    background-color: white;
+    padding: 10px;
+    border-radius: 75px;
+    border: 5px solid aqua;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS img {
+    height: 50px;
+    width: 50px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS:hover {
+    background-color: aqua;
+    transition: 2s;
+    border-radius: 75px;
+    border: 5px solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS {
+    background-color: white;
+    padding: 10px;
+    border-radius: 75px;
+    border: 5px solid gray;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS img {
+    height: 50px;
+    width: 50px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS:hover {
+    background-color: gray;
+    transition: 2s;
+    border-radius: 75px;
+    border: 5px solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS {
+    background-color: white;
+    padding: 10px;
+    border-radius: 75px;
+    border: 5px solid blue;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS img {
+    height: 50px;
+    width: 50px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS:hover {
+    background-color: blue;
+    transition: 2s;
+    border-radius: 75px;
+    border: 5px solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS {
+    background-color: white;
+    padding: 10px;
+    border-radius: 75px;
+    border: 5px solid orange;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS img {
+    height: 50px;
+    width: 50px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS:hover {
+    background-color: orange;
+    transition: 2s;
+    border-radius: 75px;
+    border: 5px solid white;
+  }
+}
+@media (min-width: 769px) {
+  .Encabezado-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0vw;
+    padding: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-Viaja h1 {
+    font-size: 4vw;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Encabezado-P4 .Caja-Viaja h1:hover {
+    color: purple;
+    transition: 2s;
+  }
+  .Encabezado-P4 .Caja-Viaja a {
+    text-decoration: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Label-Menu {
+    position: relative;
+    cursor: pointer;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Label-Menu #Spn-1, .Encabezado-P4 .Caja-BotónHamburguesa #Spn-2, .Encabezado-P4 .Caja-BotónHamburguesa #Spn-3 {
+    position: absolute;
+    content: "";
+    background: #0027FF;
+    width: 20px;
+    height: 4px;
+    top: -8px;
+    left: 78vw;
+    border-radius: 75px;
+    transition: all 400ms ease;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Spn-2 {
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Spn-3 {
+    top: 2px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-1 {
+    transform: rotate(140deg);
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-2 {
+    opacity: 0;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Label-Menu #Spn-3 {
+    transform: rotate(-140deg);
+    top: -3px;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .Menu-P4 {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .ExplorarElMundo-P4 {
+    width: 45vw;
+    position: absolute;
+    top: 18vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .ExplorarElMundo-P4 b {
+    font-size: 4vw;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .DestinosSecretos-P4 {
+    width: 78vw;
+    position: absolute;
+    top: 28vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .DestinosSecretos-P4 em {
+    font-size: 2vw;
+    color: white;
+    text-transform: lowercase;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 {
+    position: absolute;
+    top: 31.5vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 button {
+    font-size: 2.5vw;
+    padding: 1vw;
+    border: 0.4vw solid black;
+    border-radius: 75vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .Menu-P4 .BotónExplora-P4 button:hover {
+    background-color: orange;
+    color: white;
+    border: 0.4vw solid black;
+    transition: 2s;
+    cursor: pointer;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa .PieDePágina-P4 {
+    display: none;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Facebook-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 2.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Facebook-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Facebook-PieDePágina img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Twitter-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 12.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Twitter-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Twitter-PieDePágina img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Instagram-PieDePágina {
+    position: absolute;
+    top: 45vw;
+    left: 22.5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Instagram-PieDePágina img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .Encabezado-P4 .Caja-BotónHamburguesa #Btn-Menu:checked ~ .PieDePágina-P4 .Instagram-PieDePágina img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Texto {
+    padding: 20px;
+  }
+  .PieDePágina-Contacto .RedesSociales-Texto small {
+    font-size: 3vw;
+    color: white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS {
+    background-color: white;
+    padding: 2vw;
+    border-radius: 75vw;
+    border: 0.7vw solid aqua;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS img {
+    height: 8vw;
+    width: 8vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .LinkedIn-RS:hover {
+    background-color: aqua;
+    transition: 2s;
+    border-radius: 75vw;
+    border: 0.7vw solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS {
+    background-color: white;
+    padding: 2vw;
+    border-radius: 75vw;
+    border: 0.7vw solid gray;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS img {
+    height: 8vw;
+    width: 8vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .GitHub-RS:hover {
+    background-color: gray;
+    transition: 2s;
+    border-radius: 75vw;
+    border: 0.7vw solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS {
+    background-color: white;
+    padding: 2vw;
+    border-radius: 75vw;
+    border: 0.7vw solid blue;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS img {
+    height: 8vw;
+    width: 8vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Twitter-RS:hover {
+    background-color: blue;
+    transition: 2s;
+    border-radius: 75vw;
+    border: 0.7vw solid white;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS {
+    background-color: white;
+    padding: 2vw;
+    border-radius: 75vw;
+    border: 0.7vw solid orange;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS img {
+    height: 8vw;
+    width: 8vw;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+  }
+  .PieDePágina-Contacto .RedesSociales-Imagenes .Gmail-RS:hover {
+    background-color: orange;
+    transition: 2s;
+    border-radius: 75vw;
+    border: 0.7vw solid white;
+  }
+}
+
+/*# sourceMappingURL=Proyecto4.css.map */
